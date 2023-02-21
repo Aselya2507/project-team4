@@ -1,6 +1,6 @@
 env:
   repo:            "https://github.com/Aselya2507/team4-project.git" 
-  app_version:     "master"
+  app_version:     "latest"
   repo_region:     "us-central1"
   project_id:      "${{ secrets.PROJECT_ID }}" 
   app_name:        "ots"
@@ -12,7 +12,7 @@ env:
   sonar_projectKey: "asselya-agaidarova_sonarqube-for-team4"
   sonar_login: "3b2efff6567d152eee8a819fe19018bf141acc46"
 
-name: ContinuousDelivery
+name: Deployment
 
 # Controls when the workflow will run 
 on:

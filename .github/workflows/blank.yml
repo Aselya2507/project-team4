@@ -1,6 +1,6 @@
 # Declaring env's
 env:
-  repo:             "https://github.com/Aselya2507/project-team4.git" # Add the URL for the desired GitHub Repository to build and push
+  repo:             "https://github.com/Luzifer/ots.git" # Add the URL for the desired GitHub Repository to build and push
   app_version:      "1.0" # Add desired app version
   repo_region:      "us-central1" # Specify Google Artifact Region
   app_name:         "ots" # Will be used as working directory must corresponed to the cloned repository name

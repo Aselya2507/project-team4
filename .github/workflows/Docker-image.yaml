@@ -7,8 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  # pull_request:
+  #   branches: [ "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
       - name: Build the image
         working-directory: ots
         run: 
-          docker build -t us-central1-docker.pkg.dev/light-processor-377018/team4/ots:2.0.0 .
+          docker build -t us-central1-docker.pkg.dev/light-processor-377018/team4/ots:3.0.0 .
 
       - name: Authenticate to Registry 
         id: 'auth'
@@ -54,4 +54,4 @@ jobs:
           gcloud auth configure-docker   us-central1-docker.pkg.dev    
 
       - name: push
-        run: docker push us-central1-docker.pkg.dev/light-processor-377018/team4/ots:2.0.0    
+        run: docker push us-central1-docker.pkg.dev/light-processor-377018/team4/ots:3.0.0    
